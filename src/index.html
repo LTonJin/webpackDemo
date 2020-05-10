@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=0"
+    name="viewport">
+  <meta content="target-densitydpi=320,width=640,user-scalable=no" name="viewport">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <title>康桥互联应用下载</title>
+  <meta name="keywords" content="极会议,Just Meeting,JM,M1,N8,会议电话,办公盒子,下载,安装,免费,一键安装,下载迅速" />
+  <meta name="description" content="Butel极会议产品是Butel(巴泰尔)面向企业推出的极简办公产品,致力于打造更极致的会议服务体验，极简办公从现在开始。" />
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- qq和微信中打开 -->
+    <div id="QQ_wechat">
+      <div class="tip_open tip_open_right">
+        <p
+          style="text-align: left;font-size: 32px;color: #7B7B7B;width: 480px;position: absolute;top: 60px;right: 110px;line-height: 58px;">
+          点击右上角图标，在弹出菜单中，选择浏览器打开</p>
+        <img style="width: 106px;height: 86px;position: absolute;top:4px;right:22px;" src="images/tip_line@2x.png">
+      </div>
+      <div class="tip_open tip_open_left">
+        <p
+          style="text-align: left;font-size: 32px;color: #7B7B7B;width: 480px;position: absolute;top: 60px;left: 280px;line-height: 58px;">
+          请点击“用默认浏览器打开”按钮，使用浏览器打开</p>
+        <img style="width: 106px;height: 86px;position: absolute;top:4px;left:160px;" src="images/tip_line_left@2x.png">
+      </div>
+      <div style="padding-top: 60px;">
+        <img class="jhy_logo" src="images/kangqiao_logo.JPG" alt="">
+        <p style="font-size: 52px;font-weight: 400;color:#3C3C3C;margin-top: 24px;">康桥互联</p>
+        <div class="join_btn" onclick="backtop()">
+          <a>安卓版下载</a>
+        </div>
+        <div class="download_btn" onclick="backtop()">
+          <a>ios版下载</a>
+        </div>
+        <div class="pc_download_btn" onclick="backtop()">
+          <a>pc版下载</a>
+        </div>
+        <div class="share_btn" onclick="backtop()">
+          <a>屏幕分享下载</a>
+        </div>
+      </div>
+    </div>
+    <!-- 手机浏览器打开 -->
+    <div id="mobile_brower">
+      <img class="jhy_logo" src="images/kangqiao_logo.JPG" alt="">
+      <p style="font-size: 52px;font-weight: 400;color:#3C3C3C;margin-top: 24px;">康桥互联</p>
+      <div class="join_btn">
+        <a>安卓版下载</a>
+      </div>
+      <div class="download_btn">
+        <a>ios版下载</a>
+      </div>
+      <div class="pc_download_btn">
+        <a>pc版下载</a>
+      </div>
+      <div class="share_btn">
+        <a>屏幕分享下载</a>
+      </div>
+    </div>
+    <!-- pc打开 -->
+    <div id="pc_bg">
+      <div style="position: absolute;left: 50%;top:50%;width: 400px;margin-left: -200px;margin-top: -250px;">
+        <img class="jhy_logo" style="width: 110px;height:110px;" src="images/kangqiao_logo.JPG" alt="">
+        <p style="font-size: 28px;font-weight: 400;color:#fff;margin-top: 20px;">康桥互联</p>
+        <div class="join_btn">
+          <a style="font-size: 22px;line-height: 58px;">安卓版下载</a>
+        </div>
+        <div class="download_btn">
+          <a style="font-size: 22px;line-height: 58px;">ios版下载</a>
+        </div>
+        <div class="pc_download_btn">
+          <a style="font-size: 22px;line-height: 58px;">pc版下载</a>
+        </div>
+        <div class="share_btn" onclick="backtop()">
+          <a style="font-size: 22px;line-height: 58px;">屏幕分享下载</a>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <script>
+    // 微信QQ中打开页面点击按钮，返回顶部提示
+    function backtop() {
+      var dom = document.getElementById('QQ_wechat');
+      dom.scrollTop = 0;
+    }
+  </script>
+
+
+  <script>
+    var params = {};
+    params.hvsapp_android_url = "https://ds.butel.com/download2/simple-jhy_online_v3.0.41.439.apk";
+    params.hvsapp_ios_url =
+      "itms-services://?action=download-manifest&url=https://ds.butel.com/download2/simple-jhy_online3.0.129.plist";
+    params.hvsapp_win_url = "https://ds.butel.com/download2/ButelMeetingPro_PE_x64_4.5.18.2.exe";
+    params.screen_share_url = "https://ds.butel.com/download2/ButelMeetingPro_PE_x64_4.5.18.2.exe";
+  </script>
+  <script src="../js/jquery.min.js"></script>
+</body>
+
+</html>
