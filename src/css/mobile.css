@@ -1,0 +1,125 @@
+
+.mobile_page{
+  display: none;
+  color: #2D2D2D;
+  font-size: 16px;
+  position: relative;
+  height: 100%;
+}
+.enter_call{
+  height: 56px;
+  background-color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.enter_call:active{
+  background-color: #E9E9F0;
+}
+.enter_call p{
+  float: left;
+  line-height: 56px;
+}
+.right_arrow{
+  float: right;
+  width: 22px;
+  height: 22px;
+  margin-top: 16px;
+}
+.mo_center_box{
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #F0F0F5;
+  
+}
+.mo_meeting_mode{
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.mo_meeting_mode img{
+  width: 60px;
+  height: 60px;
+}
+.mo_center_box .clearfix {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  right: 10px;
+  margin-top: -200px;
+}
+.mo_service_mode{
+  margin-bottom: 12px;
+  line-height: 21px;
+}
+.mo_info{
+  display: inline-block;
+  width: 108px;
+  color: #A2A2A5;
+  font-size: 12px;
+  line-height: 21px;
+  margin-bottom: 54px;
+}
+.mo_title{
+  position: absolute;
+  top: 24px;
+  left: 21px;
+}
+/* 弹框样式 */
+.call_modal{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  margin: 0;
+  display: none;
+}
+/* .call_modal_wrap {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+} */
+.call_modal_content{
+  position: absolute;
+  bottom: -120px;
+  width: 100%;
+  height: 120px;
+  background-color: #fff;
+}
+.tel_number{
+  height: 60px;
+  border-bottom: 1px solid #DEE3E9;
+  text-align: center;
+  padding-top: 8px;
+  color: #2D2D2D;
+  display: block;
+  box-sizing: border-box;
+}
+.tel_number:active,
+.cancel_call:active{
+  background-color: #E9E9F0;
+}
+.cancel_call{
+  font-size: 18px;
+  text-align: center;
+  line-height: 60px;
+}
+.modal{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .45;
+  background: #000;
+}
