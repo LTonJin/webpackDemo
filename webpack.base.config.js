@@ -1,6 +1,8 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const {
+  CleanWebpackPlugin
+} = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
 
@@ -40,8 +42,7 @@ module.exports = {
     ]),
   ],
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
@@ -56,17 +57,25 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
+        test: /\.less$/,
+        use: [{
+          loader: "style-loader" // creates style nodes from JS strings
+        }, {
+          loader: "css-loader" // translates CSS into CommonJS
+        }, {
+          loader: "less-loader" // compiles Less to CSS
+        }]
+      },
+      {
         test: /\.png|jpg|gif|bmp$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              name: './images/[name].[ext]',
-              // outputPath: 'images/',
-              limit: 8192 //小于8192b,就可以转化成base64格式。大于就会打包成文件格式
-            }
+        use: [{
+          loader: 'url-loader',
+          options: {
+            name: './images/[name].[ext]',
+            // outputPath: 'images/',
+            limit: 8192 //小于8192b,就可以转化成base64格式。大于就会打包成文件格式
           }
-        ]
+        }]
       }
     ]
   }
